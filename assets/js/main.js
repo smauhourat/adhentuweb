@@ -50,14 +50,17 @@
     ========================================================*/
     var owl = $("#testimonials");
       owl.owlCarousel({
+items:4,
         loop: true,
         nav: false,
         dots: true,
         center: true,
         margin: 15,
         slideSpeed: 1000,
-        stopOnHover: true,
-        autoPlay: true,
+        //stopOnHover: true,
+        autoplay: true,
+autoplayTimeout:5000,
+autoplayHoverPause:false,
         responsiveClass: true,
         responsiveRefreshRate: true,
         responsive : {
