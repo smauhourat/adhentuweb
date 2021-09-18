@@ -50,17 +50,17 @@
     ========================================================*/
     var owl = $("#testimonials");
       owl.owlCarousel({
-items:4,
+        items:7,
         loop: true,
         nav: false,
         dots: true,
         center: true,
         margin: 15,
         slideSpeed: 1000,
-        //stopOnHover: true,
+        stopOnHover: true,
         autoplay: true,
-autoplayTimeout:5000,
-autoplayHoverPause:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         responsiveClass: true,
         responsiveRefreshRate: true,
         responsive : {
@@ -103,6 +103,25 @@ autoplayHoverPause:false,
         return false;
       });
 
-  });      
+  });   
+  
+  // ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    var strings = $('.typed-items').text();
+    strings = $('.typed-items').data('typed-person') + ',' + strings;
+    strings = strings.split(',');
+
+    typed.typed({
+      strings: strings,
+      typeSpeed: 40,
+      loop: true,
+    });
+  });
+
 
 }(jQuery));

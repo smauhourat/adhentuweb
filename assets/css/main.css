@@ -560,7 +560,7 @@ hr {
 }
 
 .navbar-brand img {
-  width: 70%;
+  width: 60%;
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
@@ -1019,7 +1019,8 @@ hr {
   background: #fff;
   border-radius: 4px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .testimonial-item .img-thumb {
@@ -1028,10 +1029,11 @@ hr {
 }
 
 .testimonial-item .img-thumb img {
-  border-radius: 50%;
+  border-radius: 5%;
   display: inline-block;
-  width: inherit;
+  width: 300px;
   padding: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .testimonial-item .content {
@@ -1045,6 +1047,7 @@ hr {
 
 .testimonial-item .content .star-icon i {
   color: #F63854;
+  font-size: 24px;
 }
 
 .testimonial-item .info h2 {
@@ -1122,6 +1125,8 @@ hr {
 .testimonial-item .icon-social .google:hover {
   background: #CE332A;
 }
+
+
 
 .owl-pagination {
   position: absolute;
@@ -1589,5 +1594,8 @@ textarea {
 
 .subtitle-contact .icon i {
   color: #F63854;
+}
 
+.typed-items {
+  display: none;
 }
