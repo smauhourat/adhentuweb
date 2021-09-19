@@ -14,7 +14,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #abacae;
+  color: #676769;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -334,7 +334,7 @@ hr {
 #features .icon {
   display: inline-block;
   width: 60px;
-  height: 60px;
+  height: 90px;
   border-radius: 4px;
   text-align: center;
   position: relative;
@@ -530,9 +530,15 @@ hr {
 .top-nav-collapse .navbar-brand {
   top: 0px;
 }
-
+/* cambiar imagen cuando collapsa */
 .top-nav-collapse .navbar-brand img {
-  width: 70%;
+  width: 40%;
+  content:url("/assets/img/logo.png");
+}
+
+.brand-logo-blanco {
+  content:url("/assets/img/logo_blanco.png");
+  width: 200px;
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
