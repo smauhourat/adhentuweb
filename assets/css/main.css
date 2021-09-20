@@ -1034,7 +1034,19 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.client-item {
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 20px;
+}
+
 .testimonial-item .img-thumb {
+  position: relative;
+  margin: 15px 15px 15px 0;
+}
+
+.client-item .img-thumb {
   position: relative;
   margin: 15px 15px 15px 0;
 }
@@ -1043,6 +1055,14 @@ hr {
   border-radius: 5%;
   display: inline-block;
   width: 300px;
+  padding: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.client-item .img-thumb img {
+  border-radius: 5%;
+  display: inline-block;
+  width: 340px;
   padding: 7px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -1069,7 +1089,19 @@ hr {
   margin: 0;
 }
 
+.client-item .info h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 0;
+}
+
 .testimonial-item .info h2 a {
+  color: #333;
+}
+
+.client-item .info h2 a {
   color: #333;
 }
 
@@ -1082,7 +1114,20 @@ hr {
   margin-bottom: 10px;
 }
 
+.client-item .info h3 {
+  margin: 0;
+  clear: both;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
 .testimonial-item .info h3 a {
+  color: #333;
+}
+
+.client-item .info h3 a {
   color: #333;
 }
 

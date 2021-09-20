@@ -322,4 +322,9 @@
           animation-delay: 11s;
 }
 
+.client-item .img-thumb img {
+  width: 300px;
+}
+
+
 }
