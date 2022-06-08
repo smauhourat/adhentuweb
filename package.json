@@ -1,0 +1,23 @@
+{
+  "name": "adhentuweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleancss": "purgecss -css ./assets/css/*.min.css --content *.html --output ./dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smauhourat/adhentuweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smauhourat/adhentuweb/issues"
+  },
+  "homepage": "https://github.com/smauhourat/adhentuweb#readme",
+  "devDependencies": {
+    "purgecss": "^4.1.3"
+  }
+}
