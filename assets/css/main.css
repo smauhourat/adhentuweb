@@ -82,6 +82,7 @@ a:not([href]):not([tabindex]) {
   position: relative;
 }
 
+/* linea de subrayado */
 .shape {
   height: 1px;
   margin: 0 auto 30px;
