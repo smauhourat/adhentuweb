@@ -1688,3 +1688,13 @@ textarea {
 .typed-items {
   display: none;
 }
+
+.form-select-custom {
+  border-radius: 5px;
+}
+
+.form-select-item {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 7px 0;
+}
