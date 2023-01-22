@@ -1,7 +1,8 @@
 {
     "general" : {
         "title":"Adhentux - Web Design/App Development",
-        "contact_btn": "Contact us"
+        "contact_btn": "Contact us",
+        "knowmore_btn": "More..."
     },   
     "menu" : {
         "home": "home",
@@ -30,5 +31,24 @@
         "card3_content_1": "We develop ",
         "card3_content_2": "Custom WebApps",
         "card3_content_3": "from conception to production and support."
+    },
+    "section_about": {
+        "title": "We are the IT Partner that will Boost your Business",
+        "content": "Focused on results, we use our it experience together with the latest technology available in the market to accompany you in the digital transformation of your company."
+    },
+    "section_features": {
+        "title": "Used technology",
+        "subtitle_1": "Responsive Web Sites",
+        "content_1": "The designs are adaptable to the different devices on the market (Pc, Laptop, Tablets, Telephones)",
+        "subtitle_2": "Bootstrap 4/5",
+        "content_2": "Bootstrap is an open source toolkit for responsive web development with HTML, CSS and JavaScript.",
+        "subtitle_3": "HTML5, C#, Javascript, React",
+        "content_3": "These are some of the technologies we use for both Websites and Application Development.",
+        "subtitle_4": "WooCommerce",
+        "content_4": "We use WooCommerce for your Store, together with WordPress it is the most used in the world of e-commerce.",
+        "subtitle_5": "Portable Applications",
+        "content_5": "We develop Portable Web Applications, simple to install in Cloud services.",
+        "subtitle_6": "Ticket System",
+        "content_6": "We make available to our clients a Ticket System for Feedback during the Development of Solutions."
     }
 }
