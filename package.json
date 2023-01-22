@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cleancss": "purgecss -css ./assets/css/*.min.css --content *.html --output ./dist/css/"
+    "cleandist": "rmdir /S /Q dist && mkdir dist",
+    "cleancss": "purgecss -css ./assets/css/*.min.css --content *.html --output ./dist/css/",
+    "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
+    "translate": "static-i18n -o dist -l es -i es -i en .",
+    "build": "npm run cleandist && npm run copyassets && npm run translate"
   },
   "repository": {
     "type": "git",
