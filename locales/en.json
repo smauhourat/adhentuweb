@@ -20,6 +20,10 @@
         "title": "What We Do?",
         "card1_title": "Web Design",
         "card2_title": "E-Commerce",
-        "card3_title": "Apps Development"
+        "card3_title": "Apps Development",
+        "card1_content_1": "We design Responsive",
+        "card1_content_2": "Web Sites.",
+        "card1_content_3": "We take care of the Layout, Deployment and Put Online."
+
     }
 }
