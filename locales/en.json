@@ -1,3 +1,25 @@
 {
-    "website_title" : "Adhentux - Web Design/App Development"
+    "general" : {
+        "title":"Adhentux - Web Design/App Development",
+        "contact_btn": "Contact us"
+    },   
+    "menu" : {
+        "home": "home",
+        "services": "services",
+        "clients": "clients",
+        "plans": "plans",
+        "contact": "contact"
+    },
+    "hero": {
+        "phrase1": "Web Design",
+        "phrase2": "E-Commerce",
+        "phrase3": "Apps Development",
+        "typed": "We Provide IT Solutions,We use the latest technologies on the market,We are your next technological partner"
+    },
+    "section_whatwedo": {
+        "title": "What We Do?",
+        "card1_title": "Web Design",
+        "card2_title": "E-Commerce",
+        "card3_title": "Apps Development"
+    }
 }

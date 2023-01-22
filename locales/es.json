@@ -1,3 +1,25 @@
 {
-    "website_title" : "Adhentux - Diseño Web/Desarrollo de Apps"
+    "general" : {
+        "title": "Adhentux - Diseño Web/Desarrollo de Apps",
+        "contact_btn": "Contactanos"
+    },
+    "menu": {
+        "home": "inicio",
+        "services": "servicios",
+        "clients": "clientes",
+        "plans": "planes",
+        "contact": "contacto"    
+    },
+    "hero": {
+        "phrase1": "Diseño Web",
+        "phrase2": "E-Commerce",
+        "phrase3": "Desarrollo de Apps",
+        "typed": "Brindamos Soluciones IT,Utilizamos las últimas tecnologías del mercado,Somos tu próximo partner tecnológico"
+    },
+    "section_whatwedo": {
+        "title": "Que Hacemos?",
+        "card1_title": "Diseño Web",
+        "card2_title": "E-Commerce",
+        "card3_title": "Desarrollo Apps"
+    }
 }
