@@ -50,5 +50,14 @@
         "content_5": "Desarrollamos Aplicaciones Web Portables, simples de instalar en servicios Cloud.",
         "subtitle_6": "Sistema de Tickets",
         "content_6": "Ponemos a disposicion de nuestros clientes un Sistema de Ticket para el Feedback durante el Desarrollo de las Soluciones."
+    },
+    "clients": {
+        "title": "Trabajos Realizados",
+        "website": "Diseño y Desarrollo Web Site Institucional.",
+        "ecommerce": "Diseño y Desarrollo Ecommerce.",
+        "webecommerce": "Diseño y Desarrollo Ecommerce.",
+        "documentationapp": "Sistema de Carga y Control de Documentación.",
+        "chemical": "Sistema de Cotización de Productos Químicos.",
+        "webapp": "Web App"
     }
 }
