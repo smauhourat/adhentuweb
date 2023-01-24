@@ -59,5 +59,10 @@
         "documentationapp": "Loading and Documentation Control System.",
         "chemical": "Quotation System for Chemical Products.",
         "webapp": "Aplicación Web"
+    },
+    "plans": {
+        "title": "Plans to start",
+        "subtitle": "We also offer a fast internet presence with these 3 plans.",
+        "months": "/mes"
     }
 }

@@ -59,5 +59,10 @@
         "documentationapp": "Sistema de Carga y Control de Documentación.",
         "chemical": "Sistema de Cotización de Productos Químicos.",
         "webapp": "Web App"
+    },
+    "plans": {
+        "title": "Planes para comenzar",
+        "subtitle": "Tambien ofrecemos una presencia rápida en internet con estos 3 planes.",
+        "months": "/month"
     }
 }
