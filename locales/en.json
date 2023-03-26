@@ -2,7 +2,8 @@
     "general" : {
         "title":"Adhentux - Web Design/App Development",
         "contact_btn": "Contact us",
-        "knowmore_btn": "More..."
+        "knowmore_btn": "More...",
+        "per_month": " /month"
     },   
     "menu" : {
         "home": "home",
@@ -37,7 +38,7 @@
         "content": "Focused on results, we use our it experience together with the latest technology available in the market to accompany you in the digital transformation of your company."
     },
     "section_features": {
-        "title": "Used technology",
+        "title": "Technology",
         "subtitle_1": "Responsive Web Sites",
         "content_1": "The designs are adaptable to the different devices on the market (Pc, Laptop, Tablets, Telephones)",
         "subtitle_2": "Bootstrap 4/5",
@@ -54,15 +55,33 @@
     "clients": {
         "title": "Works",
         "website": "Institutional Website Design and Development.",
-        "ecommerce": "Ecommerce Design and Development.",
+        "ecommerce": "Web Site - Ecommerce.",
         "webecommerce": "Diseño y Desarrollo Ecommerce.",
         "documentationapp": "Loading and Documentation Control System.",
         "chemical": "Quotation System for Chemical Products.",
-        "webapp": "Aplicación Web"
+        "webapp": "Web App"
     },
     "plans": {
         "title": "Plans to start",
         "subtitle": "We also offer a fast internet presence with these 3 plans.",
-        "months": "/mes"
+        "months": "/month",
+        "start": {
+            "price": "u$s20.00"
+        },
+        "plus": {
+            "price": "u$s25.00"
+        },
+        "premium": {
+            "price": "u$s30.00"
+        },
+        "register": "Free .com",
+        "hosting": "Free Hosting (1 year)",
+        "ssl": "Free SSL (1 year)",
+        "emails": "email accounts",
+        "search_engines": "Search Engines Submission",
+        "qty_sections": "sections",
+        "contact_form": "Contact Form",
+        "images_gallery": "Images Gallery",
+        "contact": "call"
     }
 }
