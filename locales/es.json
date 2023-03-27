@@ -83,5 +83,14 @@
         "contact_form": "Formulario de Contacto",
         "images_gallery": "Galeria de Imágenes",
         "contact": "Contactar"
+    },
+    "section_contact": {
+        "title": "Contacto",
+        "subtitle": "Dejanos un mensaje",
+        "name": "Nombre",
+        "email": "Email",
+        "subject": "Titulo",
+        "message": "Mensaje",
+        "send": "Enviar"
     }
 }

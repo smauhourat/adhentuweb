@@ -83,5 +83,14 @@
         "contact_form": "Contact Form",
         "images_gallery": "Images Gallery",
         "contact": "call"
+    },
+    "section_contact": {
+        "title": "Contact",
+        "subtitle": "Leave us a message",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send"
     }
 }
