@@ -1,11 +1,11 @@
 {
-    "general" : {
-        "title":"Adhentux - Web Design/App Development",
+    "general": {
+        "title": "Adhentux - Web Design/App Development",
         "contact_btn": "Contact us",
         "knowmore_btn": "More...",
         "per_month": " /month"
-    },   
-    "menu" : {
+    },
+    "menu": {
         "home": "home",
         "services": "services",
         "clients": "clients",
@@ -28,7 +28,7 @@
         "card1_content_3": "We take care of the layout, deployment and put online.",
         "card2_content_1": "We partner you in the process of having your",
         "card2_content_2": "Online Store.",
-        "card2_content_3": "",        
+        "card2_content_3": "",
         "card3_content_1": "We develop ",
         "card3_content_2": "Custom WebApps",
         "card3_content_3": "from conception to production and support."
@@ -100,8 +100,9 @@
         "title_1": "Links",
         "title_2": "Contact",
         "copyrights": "All Rights Reserved",
-        "menu_home": "Inicio",
-        "menu_services": "Servicios",
-        "menu_clients": "Clientes",
-        "menu_privacity": "Políticas de Privacidad"
-    }}
+        "menu_home": "Home",
+        "menu_services": "Services",
+        "menu_clients": "Clients",
+        "menu_privacity": "Privacity Statements"
+    }
+}
