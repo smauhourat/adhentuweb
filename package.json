@@ -9,8 +9,7 @@
     "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
     "translate": "static-i18n -o dist -l es -i es -i en .",
     "fixtrans": "node trans.js",
-    "move_privacy": "node move_privacity.js",
-    "build": "npm run cleandist && npm run copyassets && npm run translate && npm run fixtrans && npm run move_privacy"
+    "build": "npm run cleandist && npm run copyassets && npm run translate && npm run fixtrans"
   },
   "repository": {
     "type": "git",
