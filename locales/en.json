@@ -92,5 +92,16 @@
         "subject": "Subject",
         "message": "Message",
         "send": "Send"
-    }
-}
+    },
+    "section_footer": {
+        "resume_1": "We are a Company that Provides IT Solutions,",
+        "resume_2": "Web/UX Design, Application Development,",
+        "resume_3": "E-Commerce implementations",
+        "title_1": "Links",
+        "title_2": "Contact",
+        "copyrights": "All Rights Reserved",
+        "menu_home": "Inicio",
+        "menu_services": "Servicios",
+        "menu_clients": "Clientes",
+        "menu_privacity": "Políticas de Privacidad"
+    }}

@@ -2,6 +2,7 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 
 const es_locale = {
+    "data_typed_person": "Que hacemos?",
     "name": {
         "placeholder": "Nombre",
         "data_error": "Por favor ingresa tu Nombre"
@@ -21,6 +22,7 @@ const es_locale = {
 }
 
 const en_locale = {
+    "data_typed_person": "What we do?",
     "name": {
         "placeholder": "Name",
         "data_error": "Please enter your Name"
@@ -43,24 +45,28 @@ const en_locale = {
 function translateFile(filePath, locales) {
     const $file = cheerio.load(fs.readFileSync(filePath), null, true);
 
-    const $nameControl = $file('[name=name]');
-    const $emailControl = $file('[name=email]');
-    const $subjectControl = $file('[name=subject]');
-    const $messageControl = $file('[name=message]');
+    const $heroFirstTextCtrl = $file('.typed-items');
+    const $nameCtrl = $file('[name=name]');
+    const $emailCtrl = $file('[name=email]');
+    const $subjectCtrl = $file('[name=subject]');
+    const $messageCtrl = $file('[name=message]');
 
-    $nameControl.attr('placeholder', locales['name'].placeholder);
-    $nameControl.attr('data-error', locales['name'].data_error);
+    $heroFirstTextCtrl.attr('data-typed-person', locales['data_typed_person']);
 
-    $emailControl.attr('placeholder', locales['email'].placeholder);
-    $emailControl.attr('data-error', locales['email'].data_error);
+    $nameCtrl.attr('placeholder', locales['name'].placeholder);
+    $nameCtrl.attr('data-error', locales['name'].data_error);
 
-    $subjectControl.attr('placeholder', locales['subject'].placeholder);
-    $subjectControl.attr('data-error', locales['subject'].data_error);
+    $emailCtrl.attr('placeholder', locales['email'].placeholder);
+    $emailCtrl.attr('data-error', locales['email'].data_error);
 
-    $messageControl.attr('placeholder', locales['message'].placeholder);
-    $messageControl.attr('data-error', locales['message'].data_error);
+    $subjectCtrl.attr('placeholder', locales['subject'].placeholder);
+    $subjectCtrl.attr('data-error', locales['subject'].data_error);
 
-    fs.writeFileSync(filePath.replace('.html', '2.html'), $file.html())
+    $messageCtrl.attr('placeholder', locales['message'].placeholder);
+    $messageCtrl.attr('data-error', locales['message'].data_error);
+
+    //fs.writeFileSync(filePath.replace('.html', '2.html'), $file.html())
+    fs.writeFileSync(filePath, $file.html())
 }
 
 translateFile('./dist/index.html', es_locale);

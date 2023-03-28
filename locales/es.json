@@ -92,5 +92,17 @@
         "subject": "Titulo",
         "message": "Mensaje",
         "send": "Enviar"
+    },
+    "section_footer": {
+        "resume_1": "Somos una Empresa que Brinda Soluciones IT,",
+        "resume_2": "Diseño Web/UX, Desarrollo Aplicaciones,",
+        "resume_3": "Implementaciones de E-Commerce",
+        "title_1": "Accesos",
+        "title_2": "Contacto",
+        "copyrights": "Todos los Derechos Reservados",
+        "menu_home": "Inicio",
+        "menu_services": "Servicios",
+        "menu_clients": "Clientes",
+        "menu_privacity": "Políticas de Privacidad"
     }
 }

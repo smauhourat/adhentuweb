@@ -8,7 +8,8 @@
     "cleancss": "purgecss -css ./assets/css/*.min.css --content *.html --output ./dist/css/",
     "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
     "translate": "static-i18n -o dist -l es -i es -i en .",
-    "build": "npm run cleandist && npm run copyassets && npm run translate"
+    "fixtrans": "node trans.js",
+    "build": "npm run cleandist && npm run copyassets && npm run translate && npm run fixtrans"
   },
   "repository": {
     "type": "git",
