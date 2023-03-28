@@ -38,7 +38,7 @@
 
 </head>
 
-<body>
+<body onload="handleOnloadPage()">
 
   <!-- Header Area wrapper Starts -->
   <header id="header-wrap wrapper">
@@ -81,9 +81,10 @@
             </li>
             <li class="nav-item">
               <div class="form-select-item">
-                <select class="form-select form-select-sm form-select-custom" aria-label=".form-select-sm example">
-                  <option value="es">spanish</option>
-                  <option value="en">english</option>
+                <select id="lang_selector" class="form-select form-select-sm form-select-custom"
+                  aria-label=".form-select-sm example" onchange="handlerChangeLang(this.value)">
+                  <option value="es">ES</option>
+                  <option value="en">EN</option>
                 </select>
               </div>
             </li>
@@ -1041,6 +1042,27 @@
   <script src="assets/js/contact-form-script.min.js"></script>
   <script src="assets/js/typed/typed.js"></script>
 
+  <script>
+    function handlerChangeLang(lang) {
+      const url = window.location.href;
+      let newUrl = "";
+      if (lang == 'en' && url.indexOf('/en/') == -1) {
+        newUrl = url.replace('index.html', 'en/index.html');
+      }
+      if (lang == 'es' && url.indexOf('/en/') > 0) {
+        newUrl = url.replace('en/index.html', 'index.html');
+      }
+      window.location.replace(newUrl);
+    }
+
+    function handleOnloadPage() {
+      if (window.location.href.indexOf('/en/') > 0)
+        document.getElementById('lang_selector').options[1].selected = true
+      else
+        document.getElementById('lang_selector').options[0].selected = true
+    }
+
+  </script>
 </body>
 
 </html>
