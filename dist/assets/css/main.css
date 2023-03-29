@@ -545,16 +545,19 @@ hr {
 /* cambiar imagen cuando collapsa */
 .top-nav-collapse .navbar-brand img {
   width: 40%;
-  content: url("http://www.adhentux.com/assets/img/logo.png");
+  /* content: url("http://www.adhentux.com/assets/img/logo.png"); */
+  content: url("../../assets/img/logo.png");
 }
 
 .brand-logo-blanco {
-  content: url("http://www.adhentux.com/assets/img/logo_blanco.png");
+  /* content: url("http://www.adhentux.com/assets/img/logo_blanco.png"); */
+  content: url("../../assets/img/logo_blanco.png");
   width: 200px;
 }
 
 .brand-logo {
-  content: url("http://www.adhentux.com/assets/img/logo.png");
+  /* content: url("http://www.adhentux.com/assets/img/logo.png"); */
+  content: url("../../assets/img/logo.png");
   width: 180px;
 }
 

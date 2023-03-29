@@ -45,8 +45,10 @@ const en_locale = {
     "meta_keywords": "Web Design, UX Design, Application Development, E-Commerce, IT"
 }
 
-function translateFile(filePath, locales) {
+function translateFile(filePath, lang, locales) {
     const $file = cheerio.load(fs.readFileSync(filePath), null, true);
+
+    $file('html').attr('lang', lang);
 
     $file("meta[name='description']").attr('content', locales['meta_description']);
     $file("meta[name='keywords']").attr('content', locales['meta_keywords']);
@@ -68,8 +70,8 @@ function translateFile(filePath, locales) {
     fs.writeFileSync(filePath, $file.html())
 }
 
-translateFile('./dist/index.html', es_locale);
-translateFile('./dist/en/index.html', en_locale);
+translateFile('./dist/index.html', 'es', es_locale);
+translateFile('./dist/en/index.html', 'en', en_locale);
 
 fs.unlink('dist/en/privacity_en.html', (err) => {
     if (err) throw err;
