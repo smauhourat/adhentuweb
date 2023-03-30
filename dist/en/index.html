@@ -6,8 +6,8 @@
   <!-- <title>Adhentux - Diseño Web/Desarrollo de Apps</title> -->
   <title>Adhentux - Web Design/App Development</title>
   <meta name="author" content="Adhentux">
-  <meta name="description" content="Somos una Empresa que Brinda Soluciones IT, Diseño Web/UX,  Desarrollo Aplicaciones, Implementaciones de E-Commerce">
-  <meta name="keywords" content="Diseño Web, Diseño UX, Desarrollo de Aplicaciones, E-Commerce, IT">
+  <meta name="description" content="We are a Company that Provides IT Solutions, Web/UX Design, Application Development, E-Commerce implementations">
+  <meta name="keywords" content="Web Design, UX Design, Application Development, E-Commerce, IT">
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
@@ -34,7 +34,7 @@
 
 </head>
 
-<body>
+<body onload="handleOnloadPage()">
 
   <!-- Header Area wrapper Starts -->
   <header id="header-wrap wrapper">
@@ -66,9 +66,9 @@
             </li>
             <li class="nav-item">
               <div class="form-select-item">
-                <select class="form-select form-select-sm form-select-custom" aria-label=".form-select-sm example" onchange="location=this.value">
-                  <option value="/dist/index.html">ES</option>
-                  <option value="/dist/en/index.html">EN</option>
+                <select id="lang_selector" class="form-select form-select-sm form-select-custom" aria-label=".form-select-sm example" onchange="handlerChangeLang(this.value)">
+                  <option value="es">ES</option>
+                  <option value="en">EN</option>
                 </select>
               </div>
             </li>
@@ -474,7 +474,7 @@
                 <h3><a href="#">Web Site - Ecommerce.</a></h3>
               </div>
               <div class="content">
-                <p class="description">Diseño y Desarrollo Ecommerce.</p>
+                <p class="description">Ecommerce Design and Development.</p>
                 <div class="star-icon mt-3">
                   <span><i class="icon-css3" style="color: #2965f1 "></i></span>
                   <span><i class="icon-html5"></i></span>
@@ -907,10 +907,10 @@
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <h3 class="footer-titel"><span>Links</span></h3>
             <ul class="footer-link">
-              <li><a href="#"><span>Inicio</span></a></li>
-              <li><a href="#services"><span>Servicios</span></a></li>
-              <li><a href="#clientes"><span>Clientes</span></a></li>
-              <li><a href="privacity.html" target="_blank"><span>Políticas de Privacidad</span></a></li>
+              <li><a href="#"><span>Home</span></a></li>
+              <li><a href="#services"><span>Services</span></a></li>
+              <li><a href="#clientes"><span>Clients</span></a></li>
+              <li><a href="privacity.html" target="_blank"><span>Privacity Statements</span></a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
@@ -935,7 +935,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright-content">
-              <p>© 2022 <a rel="nofollow" href="http://adhentux.com">Adhentux</a> <span>All Rights Reserved</span></p>
+              <p>© 2023 <a rel="nofollow" href="http://adhentux.com">Adhentux</a> <span>All Rights Reserved</span></p>
             </div>
           </div>
         </div>
@@ -969,6 +969,27 @@
   <script src="../assets/js/contact-form-script.min.js"></script>
   <script src="../assets/js/typed/typed.js"></script>
 
+  <script>
+    function handlerChangeLang(lang) {
+      const url = window.location.href;
+      let newUrl = "";
+      if (lang == 'en' && url.indexOf('/en/') == -1) {
+        newUrl = url.replace('index.html', 'en/index.html');
+      }
+      if (lang == 'es' && url.indexOf('/en/') > 0) {
+        newUrl = url.replace('en/index.html', 'index.html');
+      }
+      window.location.replace(newUrl);
+    }
+
+    function handleOnloadPage() {
+      if (window.location.href.indexOf('/en/') > 0)
+        document.getElementById('lang_selector').options[1].selected = true
+      else
+        document.getElementById('lang_selector').options[0].selected = true
+    }
+
+  </script>
 
 
 </body></html>
