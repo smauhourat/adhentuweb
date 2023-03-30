@@ -821,12 +821,21 @@
   <script>
     function handlerChangeLang(lang) {
       const url = window.location.href;
+
       let newUrl = "";
       if (lang == 'en' && url.indexOf('/en/') == -1) {
-        newUrl = url.replace('index.html', 'en/index.html');
-      }
-      if (lang == 'es' && url.indexOf('/en/') > 0) {
-        newUrl = url.replace('en/index.html', 'index.html');
+        if (url.indexOf('index.html') > 0) {
+          newUrl = url.replace('index.html', 'en/index.html');
+        } else {
+          newUrl = url + 'en/';
+        }
+
+      } else if (lang == 'es' && url.indexOf('/en/') > 0) {
+        if (url.indexOf('index.html') > 0) {
+          newUrl = url.replace('en/index.html', 'index.html');
+        } else {
+          newUrl = url.replace('en/', '');
+        }
       }
       window.location.replace(newUrl);
     }
