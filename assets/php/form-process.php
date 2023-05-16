@@ -83,18 +83,25 @@ $mail->AltBody = "{$Body} \n\n {$name} \n {$email}"; // Texto sin formato <HTML>
 
 // FIN - VALORES A MODIFICAR //
 
-$success = $mail->Send(); 
-
-
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Ha ocurrido un error :(";
-    } else {
-        echo $errorMSG;
-    }
+try {
+    $mail->Send(); 
+    echo "success";
+} catch(phpmailerException $e) {
+    echo $e->errorMessage(); //Pretty error messages from PHPMailer
+} catch (Exception $e) {
+    echo $e->getMessage(); //Boring error messages from anything else!
 }
+
+// $success = $mail->Send(); 
+// redirect to success page
+// if ($success && $errorMSG == ""){
+//    echo "success";
+// }else{
+//     if($errorMSG == ""){
+//         echo "Ha ocurrido un error :(";
+//     } else {
+//         echo $errorMSG;
+//     }
+// }
 
 ?>
