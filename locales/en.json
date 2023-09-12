@@ -16,10 +16,10 @@
         "phrase1": "Web Design",
         "phrase2": "E-Commerce",
         "phrase3": "Apps Development",
-        "typed": "We Provide IT Solutions,We use the latest technologies on the market,We are your next technological partner"
+        "typed": "We Provide IT Solutions,We use the latest technologies in the market,We are your next technological partner"
     },
     "section_whatwedo": {
-        "title": "What We Do?",
+        "title": "What Do We Do?",
         "card1_title": "Web Design",
         "card2_title": "E-Commerce",
         "card3_title": "Apps Development",
@@ -31,24 +31,24 @@
         "card2_content_3": "",
         "card3_content_1": "We develop ",
         "card3_content_2": "Custom WebApps",
-        "card3_content_3": "from conception to production and support."
+        "card3_content_3": "from the idea to the production and the support."
     },
     "section_about": {
         "title": "We are the IT Partner that will Boost your Business",
-        "content": "Focused on results, we use our it experience together with the latest technology available in the market to accompany you in the digital transformation of your company."
+        "content": "Focused on results, we use our IT experience together with the latest technology available in the market to guide you in the digital transformation of your company."
     },
     "section_features": {
         "title": "Technology",
         "subtitle_1": "Responsive Web Sites",
-        "content_1": "The designs are adaptable to the different devices on the market (Pc, Laptop, Tablets, Telephones)",
+        "content_1": "The designs are adjustable to the different devices on the market (Pc, Laptop, Tablets, Telephones)",
         "subtitle_2": "Bootstrap 4/5",
         "content_2": "Bootstrap is an open source toolkit for responsive web development with HTML, CSS and JavaScript.",
         "subtitle_3": "HTML5, C#, Javascript, React",
-        "content_3": "These are some of the technologies we use for both Websites and Application Development.",
+        "content_3": "These are some of the technologies we use for both Websites and App Development.",
         "subtitle_4": "WooCommerce",
         "content_4": "We use WooCommerce for your Store, together with WordPress it is the most used in the world of e-commerce.",
-        "subtitle_5": "Portable Applications",
-        "content_5": "We develop Portable Web Applications, simple to install in Cloud services.",
+        "subtitle_5": "Portable Apps",
+        "content_5": "We develop Portable Web Apps, simple to install in Cloud services.",
         "subtitle_6": "Ticket System",
         "content_6": "We make available to our clients a Ticket System for Feedback during the Development of Solutions."
     },
@@ -95,7 +95,7 @@
     },
     "section_footer": {
         "resume_1": "We are a Company that Provides IT Solutions,",
-        "resume_2": "Web/UX Design, Application Development,",
+        "resume_2": "Web/UX Design, Apps Development,",
         "resume_3": "E-Commerce implementations",
         "title_1": "Links",
         "title_2": "Contact",

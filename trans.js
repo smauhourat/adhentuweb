@@ -24,7 +24,7 @@ const es_locale = {
 }
 
 const en_locale = {
-    "data_typed_person": "What we do?",
+    "data_typed_person": "What do we do?",
     "name": {
         "placeholder": "Name",
         "data_error": "Please enter your Name"
