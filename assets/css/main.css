@@ -136,15 +136,18 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common {
-  background-color: #F63854;
+  /* background-color: #F63854; */
+  background-color: #cf1732;
   position: relative;
   z-index: 1;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .btn-common:hover {
   color: #F63854;
-  background: transparent;
+  /* background: transparent; */
+  background: #fff;
   border: 1px dotted #F63854;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
@@ -987,7 +990,7 @@ hr {
 
 #pricing .table .pricing-header .price-value span {
   font-size: 15px;
-  color: #abacae;
+  color: #676769;
   font-weight: 400;
 }
 
@@ -1000,7 +1003,7 @@ hr {
 #pricing .table .description li {
   font-size: 14px;
   font-weight: 400;
-  color: #abacae;
+  color: #676769;
   padding: 4px 0;
 }
 
@@ -1324,7 +1327,7 @@ textarea {
   margin: 30px 0px;
   padding: 3px 55px;
   position: relative;
-  color: #abacae;
+  color: #676769;
 }
 
 .contact-right .single-contact p {
@@ -1332,7 +1335,7 @@ textarea {
 }
 
 .contact-right .single-contact p a {
-  color: #abacae;
+  color: #676769;
 }
 
 .contact-right .contact-icon {
@@ -1457,7 +1460,8 @@ textarea {
 }
 
 #copyright p a {
-  color: #F63854;
+  /* color: #F63854; */
+  color: #d5324a;
 }
 
 .social-icon a {
