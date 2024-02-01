@@ -1703,3 +1703,9 @@ textarea {
   margin-bottom: 0px !important;
   padding: 7px 0;
 }
+
+.contact-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
