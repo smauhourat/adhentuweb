@@ -1,5 +1,5 @@
 {
-    "general" : {
+    "general": {
         "title": "Adhentux - Diseño Web/Desarrollo de Apps",
         "contact_btn": "Contactanos",
         "knowmore_btn": "Saber más...",
@@ -10,7 +10,7 @@
         "services": "servicios",
         "clients": "clientes",
         "plans": "planes",
-        "contact": "contacto"    
+        "contact": "contacto"
     },
     "hero": {
         "phrase1": "Diseño Web",
@@ -28,7 +28,7 @@
         "card1_content_3": "Adaptables. nos encargamos de la maquetación, implementación y puesta online.",
         "card2_content_1": "Te acompañamos en el proceso de disponer de",
         "card2_content_2": "Tu Tienda Online.",
-        "card2_content_3": "",        
+        "card2_content_3": "",
         "card3_content_1": "Desarrollamos ",
         "card3_content_2": "Aplicaciones Web a Medida",
         "card3_content_3": "desde la concepción hasta la puesta en producción y soporte."
@@ -66,13 +66,13 @@
         "subtitle": "Tambien ofrecemos una presencia rápida en internet con estos 3 planes.",
         "months": "/mes",
         "start": {
-            "price": "$11.900"
+            "price": "$24.500"
         },
         "plus": {
-            "price": "$13.200"
+            "price": "$30.000"
         },
         "premium": {
-            "price": "$21.000"
+            "price": "$37.000"
         },
         "register": "Registro .com.ar gratis",
         "hosting": "Hosting gratis por 1 año",
