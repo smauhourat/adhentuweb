@@ -1453,10 +1453,14 @@ textarea {
 }
 
 #copyright p {
-  line-height: 42px;
+  /* line-height: 42px; */
   color: #333;
   text-align: center;
   margin: 0;
+}
+
+#copyright .copyright-small {
+  font-size: 10px;
 }
 
 #copyright p a {

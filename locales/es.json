@@ -66,13 +66,13 @@
         "subtitle": "Tambien ofrecemos una presencia rápida en internet con estos 3 planes.",
         "months": "/mes",
         "start": {
-            "price": "$24.500"
-        },
-        "plus": {
             "price": "$30.000"
         },
-        "premium": {
+        "plus": {
             "price": "$37.000"
+        },
+        "premium": {
+            "price": "$55.000"
         },
         "register": "Registro .com.ar gratis",
         "hosting": "Hosting gratis por 1 año",
