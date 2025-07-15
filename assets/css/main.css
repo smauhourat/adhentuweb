@@ -1158,6 +1158,11 @@ hr {
   color: #333;
 }
 
+.client-item .img-thumb:hover {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+}
+
+
 .testimonial-item .info .indicator {
   font-size: 26px;
   font-weight: 700;
