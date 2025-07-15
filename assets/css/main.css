@@ -6,6 +6,13 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  /* --accent-color: #d42b31; */
+  --default-color: #F63854;
+  --accent-color: #cf1732;
+  --contrast-color: #ffffff;
+}
+
 body {
   background: #fff;
   font-size: 14px;
@@ -1716,4 +1723,116 @@ textarea {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+
+/* ==========================================================================
+  . FAQ's Section Style
+   ========================================================================== */
+
+.faq .faq-container {
+  /* margin-top: 250px; */
+}
+
+.faq .faq-container .faq-item {
+  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 30px 0 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item h3 span {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+
+.faq .faq-item .faq-icon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 20px;
+  line-height: 0;
+  transition: 0.3s;
+  color: var(--accent-color);
+}
+
+/* .faq .faq-icon i {
+  color: #F63854;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+} */
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active {
+  background-color: var(--accent-color);
+  transition: 0.3s;
+}
+
+.faq .faq-container .faq-active h3,
+.faq .faq-container .faq-active h3:hover,
+.faq .faq-container .faq-active .faq-toggle,
+.faq .faq-container .faq-active .faq-icon,
+.faq .faq-container .faq-active .faq-content {
+  color: var(--contrast-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
 }
