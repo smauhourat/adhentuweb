@@ -52,6 +52,34 @@
         "subtitle_6": "Sistema de Tickets",
         "content_6": "Ponemos a disposicion de nuestros clientes un Sistema de Ticket para el Feedback durante el Desarrollo de las Soluciones."
     },
+    "section_faq": {
+        "title": "Preguntas Frecuentes",
+        "subtitle": "Aquí respondemos todas las inquietudes de nuestros clientes.",
+        "faq1": {
+            "question": "Porque mi empresa necesita una página web?",
+            "answer": "Hoy, el 85% de los consumidores investiga en internet antes de comprar un producto o contratar un servicio. Una web profesional te da credibilidad."
+        },
+        "faq2": {
+            "question": "Cuanto cuesta desarrollar una página web?",
+            "answer": "El costo depende de lo que estés buscando, de todas maneras tenemos distintos planes que se pueden ajustar a tus requerimientos."
+        },
+        "faq3": {
+            "question": "No sé como registrar un nombre .com o .com.ar",
+            "answer": "No te preocupes, nosotros nos encargamos de hacer la gestión tanto .com como .com.ar y en ambos registros te transferimos la propiedad y administración de tus dominios."
+        },
+        "faq4": {
+            "question": "Si no cuento con hosting/hospedaje de mi sitio, Adhentux provee el servicio?",
+            "answer": "Brindamos un servicio de hosting o alojamiento web, con backups periodicos y actualizaciones de seguridad continua. Damos el soporte que necesitas para estar 100% online los 365 días del año."
+        },
+        "faq5": {
+            "question": "Como hago con el contenido de la página?",
+            "answer": "Nosotros te ayudamos a definir el contenido, dependiendo del perfil de tu empresa de los productos/servicios que brindas."
+        },
+        "faq6": {
+            "question": "La página se va a ver bien en cualquier dispositivo?",
+            "answer": "No te preocupes por eso, nuestros desarrollos están pensados para que se adapaten a los distintos dispositivos electrónicos (celulares, tablets, computadora)."
+        }
+    },
     "clients": {
         "title": "Trabajos Realizados",
         "website": "Diseño y Desarrollo Web Site Institucional.",

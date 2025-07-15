@@ -52,6 +52,34 @@
         "subtitle_6": "Ticket System",
         "content_6": "We make available to our clients a Ticket System for Feedback during the Development of Solutions."
     },
+    "section_faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "We answer the most common questions from our clients.",
+        "faq1": {
+            "question": "Why does my business need a website?",
+            "answer": "Today, 85% of consumers research online before buying a product or hiring a service. A professional website builds credibility."
+        },
+        "faq2": {
+            "question": "How much does it cost to develop a website?",
+            "answer": "The cost depends on your needs, but we offer flexible plans tailored to your requirements. Whether you need a basic site or a custom solution, we’ll work within your budget."
+        },
+        "faq3": {
+            "question": "I don’t know how to register a .com domain. Can you help?",
+            "answer": "Absolutely! We handle .com  domain registration for you. Once completed, we’ll transfer full ownership and management rights to you."
+        },
+        "faq4": {
+            "question": "If I don’t have hosting, does Adhentux provide this service?",
+            "answer": "Yes! We offer secure, reliable web hosting with regular backups and continuous security updates. Our support ensures your site stays 100% online, 365 days a year."
+        },
+        "faq5": {
+            "question": "How do I handle the website content?",
+            "answer": "We’ll guide you! Based on your business profile and products/services, we help you define, organize, and optimize content to attract your ideal customers."
+        },
+        "faq6": {
+            "question": " Will the website look good on all devices?",
+            "answer": "Definitely! Our designs are fully responsive, meaning they adapt seamlessly to smartphones, tablets, and desktops—no extra effort required."
+        }
+    },
     "clients": {
         "title": "Works",
         "website": "Institutional Website Design and Development.",
