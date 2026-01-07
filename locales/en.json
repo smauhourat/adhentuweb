@@ -119,7 +119,11 @@
         "email": "Email",
         "subject": "Subject",
         "message": "Message",
-        "send": "Send"
+        "send": "Send",
+        "question": "Ready to get started?",
+        "quest_subtitle": "We would love to learn more about your project. Tell us what you need and we will help you make it a reality.",
+        "phone": "Phone",
+        "location": "Location"
     },
     "section_footer": {
         "resume_1": "We are a Company that Provides IT Solutions,",

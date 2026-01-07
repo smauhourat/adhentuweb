@@ -119,7 +119,11 @@
         "email": "Email",
         "subject": "Titulo",
         "message": "Mensaje",
-        "send": "Enviar"
+        "send": "Enviar",
+        "question": "Listo para empezar?",
+        "quest_subtitle": "Nos encantaría conocer más sobre tu proyecto. Cuéntanos qué necesitas y te ayudaremos a hacerlo realidad.",
+        "phone": "Teléfono",
+        "location": "Ubicación"
     },
     "section_footer": {
         "resume_1": "Somos una Empresa que Brinda Soluciones IT,",
