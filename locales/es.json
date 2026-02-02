@@ -87,7 +87,9 @@
         "webecommerce": "Diseño y Desarrollo Ecommerce.",
         "documentationapp": "Sistema de Carga y Control de Documentación.",
         "chemical": "Sistema de Cotización de Productos Químicos.",
-        "webapp": "Aplicación Web"
+        "webapp": "Aplicación Web",
+        "video": "Video Institucional",
+        "video_desc": "Video presentación (inglés-español)"
     },
     "plans": {
         "title": "Planes para comenzar",

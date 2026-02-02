@@ -87,7 +87,9 @@
         "webecommerce": "Ecommerce Design and Development.",
         "documentationapp": "Loading and Documentation Control System.",
         "chemical": "Quotation System for Chemical Products.",
-        "webapp": "Web App"
+        "webapp": "Web App",
+        "video": "Corporate Video",
+        "video_desc": "Corporate Brand Video (english-spanish)"
     },
     "plans": {
         "title": "Plans to start",
