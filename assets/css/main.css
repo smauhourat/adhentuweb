@@ -1283,6 +1283,50 @@ hr {
   outline: none;
 }
 
+/* La barra de menu sticky (.top-nav-collapse) usa z-index: 999999, muy por
+   encima del 1050 que Bootstrap le da al modal: el logo y el menu quedaban
+   pisando el video. El modal y su backdrop se suben por encima de la barra. */
+.video-modal {
+  z-index: 1000050;
+}
+
+.modal-backdrop {
+  z-index: 1000040;
+}
+
+/* Mobile en landscape: el viewport es muy bajo y el video 16:9 no entra, asi
+   que la parte de arriba se iba debajo de la barra de menu. Se abandona la
+   proporcion fija y se limita el alto del video a lo que da la pantalla. */
+@media (max-height: 575px) {
+  .video-modal .modal-dialog {
+    max-width: 100%;
+    margin: 0.25rem auto;
+  }
+
+  .video-modal .modal-header {
+    padding: 0.35rem 1rem;
+  }
+
+  .video-modal .modal-title {
+    font-size: 13px;
+  }
+
+  .video-modal .embed-responsive {
+    padding-top: 0;
+    height: auto;
+  }
+
+  .video-modal .embed-responsive video {
+    position: relative;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 4rem);
+    margin: 0 auto;
+  }
+}
+
 
 .testimonial-item .info .indicator {
   font-size: 26px;
