@@ -128,4 +128,31 @@
   });
 
 
+  /**
+   * Modal de video (cliente Athicon)
+   *
+   * El <video> se carga con preload="none" para no bajar varios MB en la home.
+   * Al cerrar el modal se pausa y se rebobina: sin esto el audio sigue sonando
+   * detras de la pagina.
+   */
+  $('#athiconVideoModal')
+    .on('shown.bs.modal', function () {
+      var video = document.getElementById('athiconVideoPlayer');
+      if (video) {
+        var reproduccion = video.play();
+        // Safari/Chrome pueden rechazar el play() con audio; el usuario usa los controles.
+        if (reproduccion && typeof reproduccion.catch === 'function') {
+          reproduccion.catch(function () { });
+        }
+      }
+    })
+    .on('hidden.bs.modal', function () {
+      var video = document.getElementById('athiconVideoPlayer');
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+
+
 }(jQuery));

@@ -885,16 +885,21 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.0s">
           <div class="item">
             <div class="client-item">
-              <div class="img-thumb">
-                <!-- Antes era un GIF de 4,7 MB; el MP4 equivalente pesa 248 KB -->
-                <video src="assets/img/clients/athicon-promo.mp4"
-                  poster="assets/img/clients/athicon-promo-poster.webp" width="300" height="170" autoplay muted loop
-                  playsinline preload="metadata" aria-label="Video institucional de Athicon"></video>
-              </div>
-              <div class="info">
-                <h3>Athicon</h3>
-                <h4><span data-t="clients.video">Video Institucional</span></h4>
-              </div>
+              <!-- El preview abre el video completo en un modal, no en otra pestaña -->
+              <a href="#athiconVideoModal" class="video-trigger" data-toggle="modal"
+                data-target="#athiconVideoModal">
+                <div class="img-thumb">
+                  <!-- Antes era un GIF de 4,7 MB; el MP4 equivalente pesa 248 KB -->
+                  <video src="assets/img/clients/athicon-promo.mp4"
+                    poster="assets/img/clients/athicon-promo-poster.webp" width="300" height="170" autoplay muted loop
+                    playsinline preload="metadata" aria-label="Video institucional de Athicon"></video>
+                  <span class="video-play-btn" aria-hidden="true"></span>
+                </div>
+                <div class="info">
+                  <h3>Athicon</h3>
+                  <h4><span data-t="clients.video">Video Institucional</span></h4>
+                </div>
+              </a>
               <div class="content">
                 <p class="description" data-t="clients.video_desc">Video presentación (inglés-español)<br>
                 </p>
@@ -1224,6 +1229,31 @@
         target="_blank" rel="noopener noreferrer">
         <img src="assets/img/whatsapp.svg" alt="WhatsApp" />
     </a>  
+
+  <!-- Modal Video Institucional Athicon -->
+  <div class="modal fade video-modal" id="athiconVideoModal" tabindex="-1" role="dialog"
+    aria-labelledby="athiconVideoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="athiconVideoModalLabel">Athicon &ndash; <span
+              data-t="clients.video">Video Institucional</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <!-- preload="none": el video pesa varios MB, solo se baja al abrir el modal -->
+            <video id="athiconVideoPlayer" class="embed-responsive-item"
+              src="assets/img/clients/athicon-promo-v2-eng.mp4"
+              poster="assets/img/clients/athicon-promo-poster.webp" controls preload="none" playsinline
+              aria-label="Video institucional de Athicon"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script defer src="assets/js/jquery-min.js"></script>
