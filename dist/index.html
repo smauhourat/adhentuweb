@@ -9,19 +9,29 @@
   <meta name="keywords" content="Diseño Web, Diseño UX, Desarrollo de Aplicaciones, E-Commerce, IT">
 
   <link rel="canonical" href="https://www.adhentux.com/">
+
+  <!-- Versiones por idioma. trans.js reescribe el canonical de la página /en/ -->
+  <link rel="alternate" hreflang="es" href="https://www.adhentux.com/">
+  <link rel="alternate" hreflang="en" href="https://www.adhentux.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.adhentux.com/">
+
   <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adhentux | Empresa de Soluciones IT, Diseño Web/UX">
   <meta property="og:description" content="Somos una Empresa que Brinda Soluciones IT, Diseño Web/UX,  Desarrollo Aplicaciones, Implementaciones de E-Commerce">
   <meta property="og:url" content="https://www.adhentux.com/">
-  <meta property="og:site_name" content="Adhentux">  
+  <meta property="og:site_name" content="Adhentux">
+  <meta property="og:image" content="https://www.adhentux.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Adhentux">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@adhentux">
   <meta name="twitter:creator" content="@adhentux">
   <meta name="twitter:title" content="Adhentux | Empresa de Soluciones IT, Diseño Web/UX">
-  <meta name="twitter:description" content="Somos una Empresa que Brinda Soluciones IT, Diseño Web/UX,  Desarrollo Aplicaciones, Implementaciones de E-Commerce.">
-  <meta name="twitter:image" content="https://www.adhentux.com/assets/img/logo.png">
+  <meta name="twitter:description" content="Somos una Empresa que Brinda Soluciones IT, Diseño Web/UX,  Desarrollo Aplicaciones, Implementaciones de E-Commerce">
+  <meta name="twitter:image" content="https://www.adhentux.com/assets/img/og-image.png">
 
 
   <!--====== Google Fonts ======-->
@@ -29,10 +39,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
-  <!-- 2. Carga la fuente (ahora con todos los pesos juntos) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800&amp;display=swap">
+  <!-- 2. Un solo request con las familias que el CSS realmente usa.
+       Antes eran 3 requests e incluían Roboto, que no aparece en ningún
+       font-family de las hojas de estilo. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&amp;family=Nunito:wght@300;400;700;800&amp;display=swap">
 
 
   <!--====== Favicon Icon ======-->
@@ -42,10 +52,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Icon -->
   <link rel="stylesheet" href="assets/fonts/line-icons.css">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.css">
-
   <!-- Animate -->
   <link rel="stylesheet" href="assets/css/animate.css">
   <!-- Main Style -->
@@ -55,8 +61,30 @@
   <!-- Default CSS -->
   <link rel="stylesheet" href="assets/css/default.css">
 
-  <!-- http://fizzed.com/oss/font-mfizz -->
-  <link rel="stylesheet" href="assets/fonts/font-mfizz.css">
+
+  <!-- Datos estructurados de la empresa. El FAQPage lo genera trans.js a partir
+       del DOM, así queda en el idioma correcto y sincronizado con el HTML. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Adhentux",
+    "url": "https://www.adhentux.com/",
+    "logo": "https://www.adhentux.com/assets/img/logo.png",
+    "image": "https://www.adhentux.com/assets/img/og-image.png",
+    "email": "info@adhentux.com",
+    "telephone": "+54-11-3680-1621",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Villa Urquiza, Ciudad Autónoma de Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/adhentux/",
+      "https://www.linkedin.com/in/adhentux/"
+    ]
+  }
+  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZYGETHGPPH"></script>
@@ -67,17 +95,74 @@
 
     gtag('config', 'G-ZYGETHGPPH');
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Porque mi empresa necesita una página web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hoy, el 85% de los consumidores investiga en internet antes de comprar un producto o contratar un servicio. Una web profesional te da credibilidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Cuanto cuesta desarrollar una página web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo depende de lo que estés buscando, de todas maneras tenemos distintos planes que se pueden ajustar a tus requerimientos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "No sé como registrar un nombre .com o .com.ar",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No te preocupes, nosotros nos encargamos de hacer la gestión tanto .com como .com.ar y en ambos registros te transferimos la propiedad y administración de tus dominios."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Si no cuento con hosting/hospedaje de mi sitio, Adhentux provee el servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brindamos un servicio de hosting o alojamiento web, con backups periodicos y actualizaciones de seguridad continua. Damos el soporte que necesitas para estar 100% online los 365 días del año."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como hago con el contenido de la página?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nosotros te ayudamos a definir el contenido, dependiendo del perfil de tu empresa de los productos/servicios que brindas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La página se va a ver bien en cualquier dispositivo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No te preocupes por eso, nuestros desarrollos están pensados para que se adapaten a los distintos dispositivos electrónicos (celulares, tablets, computadora)."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body onload="handleOnloadPage()">
 
   <!-- Header Area wrapper Starts -->
-  <header id="header-wrap wrapper">
+  <header id="header-wrap">
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="index.html" class="navbar-brand" aria-label="logo"><img class="brand-logo-blanco" alt=""></a>
+        <a href="index.html" class="navbar-brand"><img class="brand-logo-blanco" src="assets/img/logo_blanco.png" alt="Adhentux" width="200" height="23"></a>
         <!-- <span class="logo-font">adhentux</span> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="lni-menu"></i>
@@ -101,7 +186,7 @@
             </li>
             <li class="nav-item">
               <div class="form-select-item">
-                <select id="lang_selector" class="form-select form-select-sm form-select-custom" aria-label=".form-select-sm example" onchange="handlerChangeLang(this.value)">
+                <select id="lang_selector" class="form-select form-select-sm form-select-custom" aria-label="Seleccionar idioma" onchange="handlerChangeLang(this.value)">
                   <option value="es">ES</option>
                   <option value="en">EN</option>
                 </select>
@@ -167,7 +252,7 @@
               <i class="lni-cog"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">Diseño Web</a></h3>
+              <h3>Diseño Web</h3>
               <p>
                 <span>Diseñamos</span> <strong>
                   <span>Sitios Web</span>
@@ -184,7 +269,7 @@
               <i class="lni-stats-up"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">E-Commerce</a></h3>
+              <h3>E-Commerce</h3>
               <p><span>Te acompañamos en el proceso de disponer de</span>
                 <strong><span>Tu Tienda Online.</span></strong>
               </p>
@@ -198,7 +283,7 @@
               <i class="lni-users"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">Desarrollo Apps</a></h3>
+              <h3>Desarrollo Apps</h3>
               <p><span>Desarrollamos </span><strong><span>Aplicaciones Web a Medida</span></strong>, <span>desde la concepción hasta la puesta en producción y soporte.</span></p>
             </div>
           </div>
@@ -222,7 +307,7 @@
               </div>
               <div class="content">
                 <p>Enfocados en resultados, usamos nuestra experiencia técnica junto con la última tecnología disponible en el mercado para acompañarte en la transformación digital de tu empresa.</p>
-                <a href="#" class="btn btn-common mt-3">Saber más...</a>
+                <a href="#contact" class="btn btn-common mt-3">Saber más...</a>
               </div>
             </div>
           </div>
@@ -349,8 +434,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>Porque mi empresa necesita una página web?</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Porque mi empresa necesita una página web?</h3>
+                <div class="faq-content" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
                   <p>Hoy, el 85% de los consumidores investiga en internet antes de comprar un producto o contratar un servicio. Una web profesional te da credibilidad.</p>
                 </div>
                 <i class="faq-toggle lni-chevron-right"></i>
@@ -360,8 +445,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>Cuanto cuesta desarrollar una página web?</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">Cuanto cuesta desarrollar una página web?</h3>
+                <div class="faq-content" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
                   <p>El costo depende de lo que estés buscando, de todas maneras tenemos distintos planes que se pueden ajustar a tus requerimientos.</p>
                 </div>
                 <i class="faq-toggle lni-chevron-right"></i>
@@ -371,8 +456,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>No sé como registrar un nombre .com o .com.ar</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">No sé como registrar un nombre .com o .com.ar</h3>
+                <div class="faq-content" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
                   <p>No te preocupes, nosotros nos encargamos de hacer la gestión tanto .com como .com.ar y en ambos registros te transferimos la propiedad y administración de tus dominios.</p>
                 </div>
                 <i class="faq-toggle lni-chevron-right"></i>
@@ -382,8 +467,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>Si no cuento con hosting/hospedaje de mi sitio, Adhentux provee el servicio?</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Si no cuento con hosting/hospedaje de mi sitio, Adhentux provee el servicio?</h3>
+                <div class="faq-content" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
                   <p>Brindamos un servicio de hosting o alojamiento web, con backups periodicos y actualizaciones de seguridad continua. Damos el soporte que necesitas para estar 100% online los 365 días del año.</p>
                 </div>
                 <i class="faq-toggle bi lni-chevron-right"></i>
@@ -393,8 +478,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>Como hago con el contenido de la página?</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">Como hago con el contenido de la página?</h3>
+                <div class="faq-content" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
                   <p>Nosotros te ayudamos a definir el contenido, dependiendo del perfil de tu empresa de los productos/servicios que brindas.</p>
                 </div>
                 <i class="faq-toggle bi lni-chevron-right"></i>
@@ -404,8 +489,8 @@
                 <div class="faq-icon">
                   <i class="lni-question-circle"></i>
                 </div>
-                <h3>La página se va a ver bien en cualquier dispositivo?</h3>
-                <div class="faq-content">
+                <h3 role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">La página se va a ver bien en cualquier dispositivo?</h3>
+                <div class="faq-content" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
                   <p>No te preocupes por eso, nuestros desarrollos están pensados para que se adapaten a los distintos dispositivos electrónicos (celulares, tablets, computadora).</p>
                 </div>
                 <i class="faq-toggle bi lni-chevron-right"></i>
@@ -430,13 +515,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.4s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.g2r.com.ar" target="_blank">
+              <a href="http://www.g2r.com.ar" target="_blank" rel="noopener noreferrer">
                   <div class="img-thumb">
                     <img src="assets/img/clients/g2r.webp" alt="g2r" width="300px" height="170px" loading="lazy">
                   </div>
                   <div class="info">
-                    <h2>G2R</h2>
-                    <h3>Web Site</h3>
+                    <h3>G2R</h3>
+                    <h4>Web Site</h4>
                   </div>
               </a>
               <div class="content">
@@ -454,13 +539,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.5s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.quimkong.com.ar" target="_blank">
+              <a href="http://www.quimkong.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/quimkong.webp" alt="quimkong" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Quimkong</h2>
-                  <h3>Aplicación Web</h3>
+                  <h3>Quimkong</h3>
+                  <h4>Aplicación Web</h4>
                   </div>
                 </a>
               <div class="content">
@@ -479,13 +564,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.1s">
           <div class="item">
             <div class="client-item">
-              <a href="https://tilceny.uy" target="_blank">
+              <a href="https://tilceny.uy" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/tilceny.webp" alt="tilceny" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Tilceny</h2>
-                  <h3>Web Site</h3>
+                  <h3>Tilceny</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -505,13 +590,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.8s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.greencloud.com.ar" target="_blank">
+              <a href="http://www.greencloud.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                     <img src="assets/img/clients/greencloud.webp" alt="greencloud" width="300px" height="170px" loading="lazy">
                   </div>
                   <div class="info">
-                    <h2>Greencloud</h2>
-                    <h3>Web Site</h3>
+                    <h3>Greencloud</h3>
+                    <h4>Web Site</h4>
                   </div>
                 </a>
               <div class="content">
@@ -529,13 +614,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.9s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.inquimex.com.ar" target="_blank">
+              <a href="http://www.inquimex.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/inquimex.webp" alt="inquimex" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Inquimex</h2>
-                  <h3>Web Site</h3>
+                  <h3>Inquimex</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -553,13 +638,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.0s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.athicon.com" target="_blank">
+              <a href="http://www.athicon.com" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/athicon.webp" alt="athicon" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Athicon</h2>
-                  <h3>Web Site</h3>
+                  <h3>Athicon</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -579,13 +664,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.8s">
           <div class="item">
             <div class="client-item">
-              <a href="https://www.marilaudeco.com.ar" target="_blank">
+              <a href="https://www.marilaudeco.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/marilaudeco.webp" alt="Marilaudeco" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Marilaudeco</h2>
-                  <h3><span>Web Site - Ecommerce.</span></h3>
+                  <h3>Marilaudeco</h3>
+                  <h4><span>Web Site - Ecommerce.</span></h4>
                 </div>
               </a>
               <div class="content">
@@ -603,13 +688,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.9s">
           <div class="item">
             <div class="client-item">
-              <a href="https://adhentux.com/triperbagsweb" target="_blank">
+              <a href="https://adhentux.com/triperbagsweb" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/triperbags.webp" alt="triperbags" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>TRIPERBAGS</h2>
-                  <h3>Web Site</h3>
+                  <h3>TRIPERBAGS</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -626,13 +711,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.0s">
           <div class="item">
             <div class="client-item">
-              <a href="https://adhentux.com/aacearg" target="_blank">
+              <a href="https://adhentux.com/aacearg" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/aacearg.webp" alt="aacearg" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>AACE Argentina</h2>
-                  <h3>Web Site</h3>
+                  <h3>AACE Argentina</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -653,13 +738,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.1s">
           <div class="item">
             <div class="client-item">
-              <a href="https://www.demarcar.com.ar" target="_blank">
+              <a href="https://www.demarcar.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/demarcar.webp" alt="demarcar" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Demarcar</h2>
-                  <h3>Web Site</h3>
+                  <h3>Demarcar</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -682,8 +767,8 @@
                 <img src="assets/img/clients/filaieforms.webp" alt="" width="300px" height="170px" loading="lazy">
               </div>
               <div class="info">
-                <h2>FILAIE</h2>
-                <h3><span>Aplicación Web</span></h3>
+                <h3>FILAIE</h3>
+                <h4><span>Aplicación Web</span></h4>
               </div>
               <div class="content">
                 <p class="description">Sistema de Carga y Control de Documentación.</p>
@@ -701,13 +786,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.0s">
           <div class="item">
             <div class="client-item">
-              <a href="https://argentinoscaminando.com" target="_blank">
+              <a href="https://argentinoscaminando.com" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/trekkingbsas.webp" alt="trekkingbsas" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Trekking Buenos Aires</h2>
-                  <h3>Web Site - Admin</h3>
+                  <h3>Trekking Buenos Aires</h3>
+                  <h4>Web Site - Admin</h4>
                 </div>
               </a>
               <div class="content">
@@ -729,13 +814,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.1s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.gertada.com.ar" target="_blank">
+              <a href="http://www.gertada.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/gertada.webp" alt="gertada" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Gertada</h2>
-                  <h3>Web Site</h3>
+                  <h3>Gertada</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -753,13 +838,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="0.9s">
           <div class="item">
             <div class="client-item">
-              <a href="https://adhentux.com/carbonargweb" target="_blank">
+              <a href="https://adhentux.com/carbonargweb" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/carbonarg.webp" alt="carbonarg" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>CARBONARG</h2>
-                  <h3>Web Site</h3>
+                  <h3>CARBONARG</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -776,15 +861,14 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.0s">
           <div class="item">
             <div class="client-item">
-              <a href="#" target="_blank">
-                <div class="img-thumb">
-                  <img src="assets/img/clients/athicon-promo.gif" alt="athicon-video" width="300px" height="170px" loading="lazy">
-                </div>
-                <div class="info">
-                  <h2>Athicon</h2>
-                  <h3><span>Video Institucional</span></h3>
-                </div>
-              </a>
+              <div class="img-thumb">
+                <!-- Antes era un GIF de 4,7 MB; el MP4 equivalente pesa 248 KB -->
+                <video src="assets/img/clients/athicon-promo.mp4" poster="assets/img/clients/athicon-promo-poster.webp" width="300" height="170" autoplay="" muted="" loop="" playsinline="" preload="metadata" aria-label="Video institucional de Athicon"></video>
+              </div>
+              <div class="info">
+                <h3>Athicon</h3>
+                <h4><span>Video Institucional</span></h4>
+              </div>
               <div class="content">
                 <p class="description">Video presentación (inglés-español)</p>
                 <!-- <div class="star-icon mt-3">
@@ -803,13 +887,13 @@
         <div class="col-lg-4 col-md-12 col-xs-12  wow fadeInDown" data-wow-delay="1.1s">
           <div class="item">
             <div class="client-item">
-              <a href="http://www.nobra.com.ar" target="_blank">
+              <a href="http://www.nobra.com.ar" target="_blank" rel="noopener noreferrer">
                 <div class="img-thumb">
                   <img src="assets/img/clients/nobra.webp" alt="nobra" width="300px" height="170px" loading="lazy">
                 </div>
                 <div class="info">
-                  <h2>Nobra</h2>
-                  <h3>Web Site</h3>
+                  <h3>Nobra</h3>
+                  <h4>Web Site</h4>
                 </div>
               </a>
               <div class="content">
@@ -969,6 +1053,12 @@
             <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="contact-block">
                 <form id="contactForm">
+                  <!-- Honeypot anti-spam: invisible para las personas, los bots
+                       lo completan. Si viene con contenido, se descarta el envío. -->
+                  <div class="hp-field" aria-hidden="true">
+                    <label for="website">No completar este campo</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                  </div>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -978,7 +1068,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required="" data-error="Por favor ingresa tu Email">
+                        <input type="email" placeholder="Email" id="email" class="form-control" name="email" required="" data-error="Por favor ingresa tu Email">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
@@ -1027,31 +1117,31 @@
               <div class="social-icon">
                 <a class="facebook" href="#" aria-label="facebook"><i class="lni-facebook-filled"></i></a>
                 <a class="twitter" href="#" aria-label="twitter"><i class="lni-twitter-filled"></i></a>
-                <a class="instagram" href="https://www.instagram.com/adhentux/" target="_blank" aria-label="instagram"><i class="lni-instagram-filled"></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/in/adhentux/" target="_blank" aria-label="linkedin"><i class="lni-linkedin-filled"></i></a>
+                <a class="instagram" href="https://www.instagram.com/adhentux/" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class="lni-instagram-filled"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/adhentux/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="lni-linkedin-filled"></i></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <h3 class="footer-titel"><span>Accesos</span></h3>
             <ul class="footer-link">
-              <li><a href="#"><span>Inicio</span></a></li>
+              <li><a href="#hero-area"><span>Inicio</span></a></li>
               <li><a href="#services"><span>Servicios</span></a></li>
               <li><a href="#clientes"><span>Clientes</span></a></li>
-              <li><a href="privacity.html" target="_blank"><span>Políticas de Privacidad</span></a></li>
+              <li><a href="privacity.html" target="_blank" rel="noopener noreferrer"><span>Políticas de Privacidad</span></a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <h3 class="footer-titel"><span>Contacto</span></h3>
             <ul class="address">
               <li>
-                <a href="#"><i class="lni-map-marker"></i> Villa Urquiza - <br> CABA, Argentina</a>
+                <span><i class="lni-map-marker"></i> Villa Urquiza - <br> CABA, Argentina</span>
               </li>
               <li>
-                <a href="#"><i class="lni-phone-handset"></i> +54 11 3680 1621</a>
+                <a href="tel:+541136801621"><i class="lni-phone-handset"></i> +54 11 3680 1621</a>
               </li>
               <li>
-                <a href="#"><i class="lni-envelope"></i>info@adhentux.com</a>
+                <a href="mailto:info@adhentux.com"><i class="lni-envelope"></i>info@adhentux.com</a>
               </li>
             </ul>
           </div>
@@ -1086,23 +1176,22 @@
   <!-- End Preloader -->
 
     <!-- Icono de WhatsApp flotante -->
-    <a href="https://wa.me/5491136801621?text=Hola,%20me%20gustaria%20pedir%20mas%20informacion" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5491136801621?text=Hola,%20me%20gustaria%20pedir%20mas%20informacion" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <img src="assets/img/whatsapp.svg" alt="WhatsApp">
     </a>  
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/jquery-min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/scrolling-nav.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/form-validator.min.js"></script>
-  <script src="assets/js/contact-form-script.min.js"></script>
-  <script src="assets/js/typed/typed.js"></script>
+  <script defer="" src="assets/js/jquery-min.js"></script>
+  <script defer="" src="assets/js/popper.min.js"></script>
+  <script defer="" src="assets/js/bootstrap.min.js"></script>
+  <script defer="" src="assets/js/wow.js"></script>
+  <script defer="" src="assets/js/jquery.nav.js"></script>
+  <script defer="" src="assets/js/scrolling-nav.js"></script>
+  <script defer="" src="assets/js/jquery.easing.min.js"></script>
+  <script defer="" src="assets/js/main.js"></script>
+  <script defer="" src="assets/js/form-validator.min.js"></script>
+  <script defer="" src="assets/js/contact-form-script.min.js"></script>
+  <script defer="" src="assets/js/typed/typed.js"></script>
   <script>
     function handlerChangeLang(lang) {
       const url = window.location.href;

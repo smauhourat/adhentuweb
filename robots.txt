@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Plantillas de mailing y endpoints internos: no deben indexarse
+Disallow: /mail.html
+Disallow: /mail2.html
+Disallow: /mail2_inline.html
+Disallow: /mail3.html
+Disallow: /mail4.html
+Disallow: /unsubscribe.html
+Disallow: /assets/php/
+
+Sitemap: https://www.adhentux.com/sitemap.xml

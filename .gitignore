@@ -1,1 +1,5 @@
 node_modules
+
+# Credenciales SMTP: nunca deben entrar al repo (ni el original ni la copia en dist)
+assets/php/config.php
+dist/assets/php/config.php

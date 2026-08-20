@@ -3,7 +3,7 @@
   #hero-area .contents .head-title {
     font-size: 40px;
   }
-  .services-item .services-content h3 a {
+  .services-item .services-content h3 {
     font-size: 14px;
   }
   .title-hl {
@@ -23,7 +23,7 @@
     font-size: 30px;
     margin-bottom: 30px;
   }
-  .services-item .services-content h3 a {
+  .services-item .services-content h3 {
     font-size: 14px;
   }
   .services-item {
@@ -40,7 +40,7 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
-  .services-item .services-content h3 a {
+  .services-item .services-content h3 {
     font-size: 16px;
   }
   .bg-inverse {
@@ -322,7 +322,8 @@
           animation-delay: 11s;
 }
 
-.client-item .img-thumb img {
+.client-item .img-thumb img,
+.client-item .img-thumb video {
   width: 300px;
 }
 

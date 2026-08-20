@@ -85,7 +85,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-header p {
-  text: center;
+  text-align: center;   /* decía `text: center`, que no es una propiedad válida */
   font-weight: 400;
   line-height: 26px;
 }
@@ -476,20 +476,15 @@ hr {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
+/* El font-size y el color vivían en el `a` interno. Al dejar de ser links,
+   los títulos caían al `h1,h2,h3,h4 { font-size: 38px }` global. */
 .services-item .services-content h3 {
   margin-top: 10px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-.services-item .services-content h3 a {
   font-size: 16px;
   color: #585b60;
-}
-
-.services-item .services-content h3 a:hover {
-  color: #F63854;
 }
 
 .services-item:hover {
@@ -562,16 +557,17 @@ hr {
   content: url("../../assets/img/logo.png");
 }
 
+/* El logo se inyectaba con content:url(), así que el <img> no tenía src ni alt:
+   invisible para lectores de pantalla y para Google, y roto si falla el CSS.
+   Ahora el src va en el HTML y acá queda solo el tamaño. */
 .brand-logo-blanco {
-  /* content: url("http://www.adhentux.com/assets/img/logo_blanco.png"); */
-  content: url("../../assets/img/logo_blanco.png");
   width: 200px;
+  height: auto;
 }
 
 .brand-logo {
-  /* content: url("http://www.adhentux.com/assets/img/logo.png"); */
-  content: url("../../assets/img/logo.png");
   width: 180px;
+  height: auto;
 }
 
 .top-nav-collapse .navbar-nav .nav-link {
@@ -689,7 +685,10 @@ hr {
 }
 
 .navbar li.active a.nav-link {
-  color: #preset;
+  /* Estaba como `color: #preset`, que no es un color válido: el navegador
+     descartaba la declaración. Se deja comentado para no alterar el aspecto
+     actual; si se quería resaltar el link activo, poner acá el color. */
+  /* color: #F63854; */
 }
 
 .dropdown-toggle::after {
@@ -1141,10 +1140,12 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.client-item .img-thumb img {
+.client-item .img-thumb img,
+.client-item .img-thumb video {
   border-radius: 5%;
   display: inline-block;
   width: 340px;
+  height: auto;
   padding: 7px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -1171,19 +1172,22 @@ hr {
   margin: 0;
 }
 
-.client-item .info h2 {
+.client-item .info h3 {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
   margin: 0;
+  /* El color estaba solo en el `a`: las tarjetas sin link (FILAIE, el video de
+     Athicon) quedaban con un color distinto al resto. */
+  color: #333;
 }
 
 .testimonial-item .info h2 a {
   color: #333;
 }
 
-.client-item .info h2 a {
+.client-item .info h3 a {
   color: #333;
 }
 
@@ -1196,20 +1200,21 @@ hr {
   margin-bottom: 10px;
 }
 
-.client-item .info h3 {
+.client-item .info h4 {
   margin: 0;
   clear: both;
   font-size: 14px;
   font-weight: 500;
   line-height: 12px;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .testimonial-item .info h3 a {
   color: #333;
 }
 
-.client-item .info h3 a {
+.client-item .info h4 a {
   color: #333;
 }
 
@@ -1426,12 +1431,6 @@ textarea {
   font-size: 16px;
 }
 
-/*cta
-*/
-#cta {
-  background: ;
-}
-
 /* Footer Area Start */
 .footer-area {
   position: relative;
@@ -1475,14 +1474,18 @@ textarea {
   margin-bottom: 20px;
 }
 
-.footer-area .address li a {
+/* La dirección dejó de ser un <a> (no llevaba a ningún lado), así que el
+   selector tiene que cubrir también el <span>. */
+.footer-area .address li a,
+.footer-area .address li span {
   color: #666666;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
 }
 
-.footer-area .address li a i {
+.footer-area .address li a i,
+.footer-area .address li span i {
   font-size: 22px;
   width: 32px;
   vertical-align: middle;
@@ -1972,4 +1975,13 @@ textarea {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+/* Honeypot anti-spam del formulario de contacto. Se saca del flujo en vez de
+   usar display:none, que algunos bots detectan y saltean. */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

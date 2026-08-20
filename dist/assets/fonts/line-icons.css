@@ -1,13 +1,12 @@
 @font-face {
   font-family: 'LineIcons';
-  src:  url('../fonts/LineIcons.eot?tc3uo0');
-  src:  url('../fonts/LineIcons.eot?tc3uo0#iefix') format('embedded-opentype'),
-    url('../fonts/LineIcons.woff2?tc3uo1') format('woff2'), /* 🔥 NUEVO: puesto el PRIMERO */
-    url('../fonts/LineIcons.ttf?tc3uo0') format('truetype'),
-    url('../fonts/LineIcons.woff?tc3uo0') format('woff'),
-    url('../fonts/LineIcons.svg?tc3uo0#LineIcons') format('svg');
+  /* woff2 cubre todos los navegadores actuales; woff queda como red de
+     seguridad. Se quitaron eot/ttf/svg (solo IE8-11 y Android 4): 591 KB. */
+  src:  url('../fonts/LineIcons.woff2?tc3uo1') format('woff2'),
+    url('../fonts/LineIcons.woff?tc3uo0') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 [class^="lni-"], [class*=" lni-"] {

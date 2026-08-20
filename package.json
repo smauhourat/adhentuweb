@@ -7,9 +7,10 @@
     "cleandist": "rmdir /S /Q dist && mkdir dist",
     "cleancss": "purgecss -css ./assets/css/*.min.css --content *.html --output ./dist/css/",
     "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
+    "copystatic": "copy /Y sitemap.xml dist\\ && copy /Y robots.txt dist\\ && copy /Y .htaccess dist\\",
     "translate": "static-i18n -o dist -l es -i es -i en --exclude node_modules --exclude dist .",
     "fixtrans": "node trans.js",
-    "build": "npm run cleandist && npm run copyassets && npm run translate && npm run fixtrans"
+    "build": "npm run cleandist && npm run copyassets && npm run copystatic && npm run translate && npm run fixtrans"
   },
   "repository": {
     "type": "git",

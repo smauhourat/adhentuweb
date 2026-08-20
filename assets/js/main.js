@@ -2,11 +2,16 @@
 
   "use strict";
 
-  $(window).on('load', function () {
-
-    /*Page Loader active
-    ========================================================*/
+  /* Page Loader active
+  ========================================================
+  Se oculta al estar listo el DOM, no al terminar de bajar todos los recursos:
+  colgado del evento `load` el visitante veía una pantalla en blanco hasta el
+  último asset, lo que empeoraba el LCP. */
+  $(function () {
     $('#preloader').fadeOut();
+  });
+
+  $(window).on('load', function () {
 
     // Sticky Nav
     $(window).on('scroll', function () {
@@ -45,43 +50,6 @@
     });
 
     wow.init();
-
-    /* Testimonials Carousel 
-   ========================================================*/
-    var owl = $("#testimonials");
-    owl.owlCarousel({
-      items: 7,
-      loop: true,
-      nav: false,
-      dots: true,
-      center: true,
-      margin: 15,
-      slideSpeed: 1000,
-      stopOnHover: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: false,
-      responsiveClass: true,
-      responsiveRefreshRate: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        960: {
-          items: 3
-        },
-        1200: {
-          items: 3
-        },
-        1920: {
-          items: 3
-        }
-      }
-    });
-
 
     /* Back Top Link active
     ========================================================*/
@@ -124,11 +92,38 @@
   });
 
   /**
-* Frequently Asked Questions Toggle
-*/
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+   * Frequently Asked Questions Toggle
+   *
+   * Antes solo escuchaba el click, así que el acordeón no se podía operar con
+   * teclado. Ahora responde también a Enter/Espacio y mantiene aria-expanded
+   * sincronizado para los lectores de pantalla.
+   */
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var titulo = item.querySelector('h3');
+    var flecha = item.querySelector('.faq-toggle');
+
+    function toggle() {
+      var abierto = item.classList.toggle('faq-active');
+      if (titulo) {
+        titulo.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+      }
+    }
+
+    // El primer item viene abierto desde el HTML: reflejarlo en el atributo.
+    if (titulo) {
+      titulo.setAttribute('aria-expanded', item.classList.contains('faq-active') ? 'true' : 'false');
+      titulo.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+          toggle();
+        }
+      });
+    }
+
+    [titulo, flecha].forEach(function (el) {
+      if (el) {
+        el.addEventListener('click', toggle);
+      }
     });
   });
 
